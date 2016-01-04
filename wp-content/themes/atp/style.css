@@ -1,0 +1,311 @@
+/*
+ Theme Name:   WPB Child Theme
+ Theme URI:    http://www.wpbeginner.com/
+ Description:  A Totomo child theme 
+ Author:       jcp wp beginner
+ Author URI:   http://www.wpbeginner.com
+ Template:     totomo
+ Version:      1.0.0
+*/
+
+@import url("../totomo/style.css");
+
+
+
+/*--------------------------------------------------------------
+4.0 Header
+--------------------------------------------------------------*/
+.site-header {
+  background: #fff;
+  width: 100%;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+
+/*--------------------------------------------------------------
+5.1 Navigation
+--------------------------------------------------------------*/
+.nav a {
+  -webkit-transition: initial;
+  -moz-transition: initial;
+  -o-transition: initial;
+  transition: initial;
+  font-weight: normal;
+}
+
+.nav > li > a {
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 15px;
+}
+
+
+.nav > li:hover > a,
+.nav > li > a:focus,
+.nav > .active > a,
+.nav > .active > a:hover,
+.nav > .active > a:active,
+.nav > .active > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background: none;
+  color: black;
+}
+
+.nav .dropdown-menu > li:hover > a,
+.nav .dropdown-menu > .active > a,
+.nav .dropdown-menu > .active > a:hover {
+  color: #fff;
+  background: transparent;
+}
+
+.nav .dropdown-menu > li > a {
+  line-height: 24px;
+}
+
+/*--------------------------------------------------------------
+9.0 Media Queries
+--------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: inherit;
+  }
+}
+
+
+/*--------------------------------------------------------------
+ATP CUSTOM
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+0. owl-carousel -- atp
+---------------------------------------------------------------*/
+.owl-carousel h5 {
+  font-size: 0.5em;
+  margin-top: 2px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.owl-carousel h6 {
+  float: right;
+  top: -33px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+/*.owl-carousel .owl-item .foo-item {
+  background-color: #337ab7;
+}
+
+*/
+
+.owl-carousel .owl-item .foo-item  img {
+  margin: 0 auto;
+  height: 170px;
+  width: auto;
+}
+
+.owl-theme .owl-controls .owl-dots{
+  display: none !important;
+}
+
+.owl-theme .owl-controls {
+  position: fixed;
+  bottom: 0;
+  left: 6%;
+  z-index: 1030;
+}
+.owl-theme .owl-controls .owl-nav .owl-prev:hover,
+.owl-theme .owl-controls .owl-nav .owl-next:hover {
+  color: #008000;
+  background-color: transparent;
+}
+.owl-theme .owl-controls .owl-nav .owl-prev,
+.owl-theme .owl-controls .owl-nav .owl-next {
+  color: #4f4f4f;
+  background: transparent;
+  font-size: 1.3em;
+  border-radius: inherit;
+  letter-spacing: 8px;
+  padding: 5px 10px 5px 10px;
+/*font-family 'Raleway Thin';*/
+}
+
+/*--------------------------------------------------------------
+0.1 Misc for Posts -- atp
+--------------------------------------------------------------*/
+.post-meta {
+  display: none;
+}
+.site-main article.post {
+  border: none;
+}
+
+
+/*--------------------------------------------------------------
+0.2 Media Queries
+--------------------------------------------------------------*/
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .owl-carousel .owl-item .foo-item  img {
+    height: 349px;
+  } 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .owl-carousel .owl-item .foo-item  img {
+    height: 449px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .owl-carousel .owl-item .foo-item  img {
+    height: 549px;
+  }
+}
+
+/*--------------------------------------------------------------
+5.1 Navigation -- atp
+--------------------------------------------------------------*/
+
+
+body {
+  background: transparent;
+}
+
+.tp {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+}
+
+.tp .navbar-inverse {
+  background-color: transparent;
+}
+
+
+
+
+/* dropdown-menu */
+
+.tp .dropdown-menu .navigation {
+  padding: 5px 0;
+}
+
+.tp .dropdown-menu li .dropdown-menu {
+  left: 100%;
+  position: absolute;
+  top: 15px;
+  left: 277px;
+  visibility: hidden;
+}
+.tp .dropdown-menu li:hover .dropdown-menu {
+  visibility: visible;
+  background-color: transparent;
+  width: auto;
+  padding: 0;
+
+}
+.tp .dropdown-menu li:hover .dropdown-menu li {
+  background-color: #eee;
+/*opacity 0.9*/
+}
+
+.tp .dropdown-menu li:hover .dropdown-menu li a {
+  margin: 0;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  /*color: #000;*/
+  font-size: 0.63em;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgba(0,0,0,0.8);
+}
+.tp .dropdown-menu li:hover .dropdown-menu li a:hover {
+  color: #008000;
+
+}
+.tp .dropdown-menu li:hover .dropdown-menu li:first-child {
+  padding-top: 5px;
+}
+.tp .dropdown-menu li:hover .dropdown-menu li:last-child {
+  padding-bottom: 5px;
+}
+
+.tp .nav .dropdown-menu li {
+  background: transparent;
+  border: none;
+  list-style: none;
+}
+
+.tp .caret, 
+.tp .nav .dropdown-menu:before,
+.tp .nav .dropdown-menu .dropdown-menu:before {
+  display: none;
+}
+
+/* dropdown-toggle -  "logo" name */
+.tp .dropdown .logoname a {
+/*font-family 'Raleway Thin';*/
+  letter-spacing: 8px;
+  padding: 20px 0 10px 0;
+  width: 274px;
+  font-weight: 700;
+/*line-height 1.3em*/
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
+
+.tp .dropdown .dropdown-menu {
+  opacity: 0;
+  display: block;
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  box-shadow: none;
+  border: none;
+  font-size: 1em;
+/*background-color black*/
+  margin: 0;
+  border-radius: 0;
+
+  width: 277px;
+
+}
+
+.tp .dropdown .dropdown-menu a {
+  padding: 0 0px 0px 0;
+  margin: 0px;
+  color: #4f4f4f;
+/*font-family 'Raleway Thin';*/
+  letter-spacing: 4px;
+  font-size: 0.6em;
+  font-weight: 700;
+  display: block;
+}
+.tp .dropdown .dropdown-menu a:hover {
+  color: #008000;
+  background-color: #eee;
+}
+.tp .dropdown:hover .dropdown-menu {
+  display: block;
+/*background-color black*/
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+  -moz-transition: opacity 0.6s ease-in-out;
+  -webkit-transition: opacity 0.6s ease-in-out;
+}
+
+/* padding top small */
+.pts {
+  padding-top: 10px;
+}
+
